@@ -1,68 +1,74 @@
+<!-- styling for paragraphs -->
+<!-- style="padding-right:60px;" "padding-left:60px;" -->
+<!-- <a href='/'><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a> -->
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-md-12">
-
-    <div class="project-title">
-      <p>Party L/nes</p>
-    </div>
-    <!-- <dl class="dl-horizontal">
-    <dt>Link</dt>
-    <dd><a href='http://desolate-woodland-68989.herokuapp.com/'>desolate-woodland-68989.herokuapp.com</a></dd>
-    <dt>GitHub</dt>
-    <dd><a href='https://github.com/mjkraus/party-lines'>Party L/nes</a></dd>
-    <dt>Tools</dt>
-    <dd><p>Node.js, Highcharts.js, Sparklines.js, JavaScript, jQuery, Bootstrap, HTML and CSS</p></dd>     
-    </dl> -->
-    <div class"row">
-      <p>Party L/nes is an exercise in interactive storytelling. This approach to reporting draws me in because it utilizes web design in a cinematic way. Through interactive storytelling, I wanted to explore design and data visualization as a way to enhance a user’s experience with a narrative.</p>  
       
-      <p>The project is based on the article <a href="https://www.washingtonpost.com/news/wonk/wp/2015/01/07/the-top-10-reasons-american-politics-are-worse-than-ever/">The top 10 reasons American politics are so broken</a>, written by Jonathan Haidt and Sam Abrams. I also used a blurb from <a href="http://www.people-press.org/2014/06/12/political-polarization-in-the-american-public/#about-the-data">Pew Research Center</a>, along with Haidt and Abrams words, to enhance the introduction paragraph.</p>
-    </div>
+      <div class="project-title">
+        <h2>Party L/nes</h2>
+      </div>
 
-    <hr>
+      <div class="links-group">  
+        <div class="links-tab"><p><a href='http://desolate-woodland-68989.herokuapp.com/'>Website</a></p></div>
+        <div class="links-tab"><p><a href='https://github.com/mjkraus/party-lines'>GitHub</a></p></div>
+        <p>Node.js, Highcharts.js, Sparklines.js, JavaScript, jQuery, Bootstrap, HTML and CSS</p>
+      </div> 
 
+      <hr>   
     
     <!-- quotes gathered by <a href="http://www.nytimes.com/interactive/2016/us/elections/candidates-on-the-issues.html?_r=0">The New York Times</a>. I designed the charts and graphs through data from Pew and used illustrations of 2016 presidential candidates from The Washington Post.</p> -->
-    <div class="row">
-      <div class="col-xs-12 col-md-6">
-        <h2>Layout</h2>
-        <p>As Haidt and Abrams article is a list, my original thought was to create dividers using the headers of each point. Shown in my wireframes, these dividers would not only highlight the headers, but symbolically act as the lines between the two political parties. However, I quickly realized that these blocks disrupted the flow of the design and narrative. I decided to increase the fonts size and underlined the points in order to set them apart from the rest of the content.</p>
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <h3>Overview</h3>
+          <p>Party L/nes is an exercise in interactive storytelling. This approach to reporting draws me in because it utilizes web design in a cinematic way. Through interactive storytelling, I wanted to explore design and data visualization as a way to enhance a user’s experience with a narrative.</p>  
+      
+          <p>The project is based on the article <a href="https://www.washingtonpost.com/news/wonk/wp/2015/01/07/the-top-10-reasons-american-politics-are-worse-than-ever/">The top 10 reasons American politics are so broken</a>, written by Jonathan Haidt and Sam Abrams. I also used a blurb from <a href="http://www.people-press.org/2014/06/12/political-polarization-in-the-american-public/#about-the-data">Pew Research Center</a>, along with Haidt and Abrams words, to enhance the introduction paragraph.</p>
+        </div>
+
+        <div class="col-xs-12 col-md-6">
+          <span><img class="img-responsive center-block" src="/img/party-lines-layout-ex.png"></span>       
+        </div>  
       </div>
 
-      <div class="col-xs-12 col-md-6">
-        <img class="img-responsive" src="/img/party-lines-layout-ex.png">         
-      </div>  
-    </div>
+      <hr>
 
-    <hr>   
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <span><img class="img-responsive center-block" src="/img/example-mock-up.png"></span>         
+        </div>
 
-    <div class"row">
-      <div class="col-xs-12 col-md-6">
-        <h2>Making Charts</h2>
-        <p>The data in this piece gave me the opportunity to work with data visualization. I redesigned several of the charts in the article and made them interactive using the JavaScript library highcharts.js. I also included two sparklines in the introduction paragraph using another library, sparklines.js.</p>
+        <div class="col-xs-12 col-md-6">
+          <h3>Layout</h3>
+          <p>As Haidt and Abrams article is a list, my original thought was to create dividers using the headers of each point. Shown in my wireframes, these dividers would not only highlight the headers, but symbolically act as the lines between the two political parties. However, I quickly realized that these blocks disrupted the flow of the design and narrative. I decided to increase the fonts size and underlined the points in order to set them apart from the rest of the content.</p>
+        </div>
       </div>
 
-      <div class="col-xs-12 col-md-6">
-        <div id="liberal-pie-chart"></div>
-      </div>  
-    </div>
-<!-- The chart if ignoring the margin on the hr tag -->
-    <hr>
+      <hr>   
 
-    <div class="row">
-      <div class="col-xs-12 col-md-6">
-        <div id="conservative-pie-chart"></div>
-    </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <h3>Data Visualization</h3>
+          <p>I wanted to enhance the with the article, so I developed a game in JavaScript that is included at the end of the article. I initially took 10 quotes from candidates on and presented them to the user without of who the quote comes from. The user agrees or disagrees with the quote. It displays at the end of the that The display of the final content is hopefully to make one question where he/she stands. That their lines may not be divided as though they seem. After I revised the game to only be six questions, as ten was too many for most users to get through.</p>
+        </div>
 
-      <div class="col-xs-12 col-md-6" style="padding-right:60px;" "padding-left:60px;">
-        <h2>Game</h2>
-        <p>I wanted to enhance the with the article, so I developed a game in JavaScript that is included at the end of the article. I initially took 10 quotes from candidates on and presented them to the user without of who the quote comes from. The user agrees or disagrees with the quote. It displays at the end of the that The display of the final content is hopefully to make one question where he/she stands. That their lines may not be divided as though they seem. After I revised the game to only be six questions, as ten was too many for most users to get through.</p>
+        <div class="col-xs-12 col-md-6">
+          <div id="liberal-pie-chart"></div>
+        </div>
       </div>
-    </div>
 
+      <hr>
 
-<!--       <a href='/'><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a> -->
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <span><img class="img-responsive center-block" src="/img/quote-game.png"></span>         
+        </div>
 
+        <div class="col-xs-12 col-md-6">
+          <h3>Game</h3>
+          <p>The data in this piece gave me the opportunity to work with data visualization. I redesigned several of the charts in the article and made them interactive using the JavaScript library highcharts.js. I also included two sparklines in the introduction paragraph using another library, sparklines.js.</p>
+        </div>
+      </div>
     </div>
   </div>
 </div> 
