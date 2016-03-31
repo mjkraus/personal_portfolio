@@ -31,7 +31,7 @@ body{
 }
 
 img{
-	border: .5px solid #d3d3d3;
+/*	border: .5px solid #d3d3d3;*/
 	text-align: center;
 	margin-top: 5px;
 	margin-bottom: 5px;
@@ -209,5 +209,25 @@ footer p a:hover{
 	color: #ff2f18;
 	text-decoration: none;
 }
+
+.links{
+	float:left;
+	position: absolute;
+}
+.tools{
+	float:right;
+	position: absolute;
+}
+
+.project-desc{
+	position: relative;
+	border: 1px solid black;
+}
+
+
+/*.col-md-12.page-layout{
+	padding-right: 70px;
+	padding-left: 0px;
+}*/
 
 

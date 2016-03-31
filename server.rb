@@ -1,4 +1,3 @@
-# db is portfolio
 module Portfolio
   class Server < Sinatra::Base
     
