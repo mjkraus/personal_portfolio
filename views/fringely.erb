@@ -20,9 +20,9 @@
       <div class="row">
         <div class="col-xs-12 col-md-6">
           <h3>Overview</h3>
-          <p>Party L/nes is an exercise in interactive storytelling. This approach to reporting draws me in because it utilizes web design in a cinematic way. Through interactive storytelling, I wanted to explore design and data visualization as a way to enhance a user’s experience with a narrative.</p>  
-      
-          <p>The project is based on the article <a href="https://www.washingtonpost.com/news/wonk/wp/2015/01/07/the-top-10-reasons-american-politics-are-worse-than-ever/">The top 10 reasons American politics are so broken</a>, written by Jonathan Haidt and Sam Abrams. I also used a blurb from <a href="http://www.people-press.org/2014/06/12/political-polarization-in-the-american-public/#about-the-data">Pew Research Center</a>, along with Haidt and Abrams words, to enhance the introduction paragraph.</p>
+          <p>Fringely is a forum about women’s hair, specifically bangs, inspired by my time working as a hair stylist. In the hair industry, stylists refer to bangs as “fringe”, which is the root word of the forum’s name, Fringely.</p> 
+
+          <p>This web application was written in Ruby and runs on the Sinatra framework. I wrote SQL commands to make queries to the Postgres database, which stores user’s login information, passwords, posts, topics, likes, and comments.</p>
         </div>
 
         <div class="col-xs-12 col-md-6">
@@ -34,12 +34,12 @@
 
       <div class="row">
         <div class="col-xs-12 col-md-6">
-          <span><img class="img-responsive center-block" src="/img/example-mock-up.png"></span>         
+          <span><img class="img-responsive center-block" src="/img/fringely-DB.png"></span>         
         </div>
 
         <div class="col-xs-12 col-md-6">
-          <h3>Layout</h3>
-          <p>As Haidt and Abrams article is a list, my original thought was to create dividers using the headers of each point. Shown in my wireframes, these dividers would not only highlight the headers, but symbolically act as the lines between the two political parties. However, I quickly realized that these blocks disrupted the flow of the design and narrative. I decided to increase the fonts size and underlined the points in order to set them apart from the rest of the content.</p>
+          <h3>Planning the Database</h3>
+          <p>Before I began the development of Fringely, I planned the backend with my entity-relationship diagram (ERD). This model helped me understand the relationships within the application and the structure of my relational database.</p>
         </div>
       </div>
 
@@ -47,8 +47,16 @@
 
       <div class="row">
         <div class="col-xs-12 col-md-6">
-          <h3>Data Visualization</h3>
-          <p>I wanted to enhance the with the article, so I developed a game in JavaScript that is included at the end of the article. I initially took 10 quotes from candidates on and presented them to the user without of who the quote comes from. The user agrees or disagrees with the quote. It displays at the end of the that The display of the final content is hopefully to make one question where he/she stands. That their lines may not be divided as though they seem. After I revised the game to only be six questions, as ten was too many for most users to get through.</p>
+          <h3>Creating Functionality</h3>
+          <ul>
+            <li>Custom coded forms for login, sign up, post creation, and comments</li>
+            <li>A user can create an account and log in. The password is encrypted through Bcrypt. Her posts and comments are associated with her account.</li>
+            <li>A user cannot comment or post without logging in</li>
+            <li>Any visitor to Fringely can “like” a post</li>
+            <li>Through the gem Redcarpet, the user can write her posts in Markdown and have them displayed in HTML on the forum.</li>
+            <li>Fringely’s top posts are displayed on the index page based on popularity from “likes” and sorted by an SQL command.</li>
+            <li>Posts are also sorted and displayed by the topic they are posted under.</li>
+          </ul>  
         </div>
 
         <div class="col-xs-12 col-md-6">
@@ -60,12 +68,17 @@
 
       <div class="row">
         <div class="col-xs-12 col-md-6">
-          <span><img class="img-responsive center-block" src="/img/quote-game.png"></span>         
+<!--           <span><img class="img-responsive center-block" src="/img/wireframes.png"></span>  -->
+          <span><img class="img-responsive center-block" src="/img/fringely-set.png"></span>
+<!--           <span><img class="img-responsive center-block" src="/img/fringely-login.png"></span>
+          <span><img class="img-responsive center-block" src="/img/fringely-topics.png"></span>
+          <span><img class="img-responsive center-block" src="/img/fringely-post2.png"></span> -->
         </div>
 
         <div class="col-xs-12 col-md-6">
-          <h3>Game</h3>
-          <p>The data in this piece gave me the opportunity to work with data visualization. I redesigned several of the charts in the article and made them interactive using the JavaScript library highcharts.js. I also included two sparklines in the introduction paragraph using another library, sparklines.js.</p>
+          <h3>Designing the User Experience and Layout</h3>
+          <p>When I designed the look and feel of Fringely, I had the user in mind. I pictured my clients from the salon, who were in high school or right out of college, using this forum. I thought that Fringely should have a trendy, bold, and high fashion feel to it, but still be youthful and fun. I chose a black, white and grey color scheme and used Google fonts Oswald and Cabin Condensed to achieve the look. The layout is on Skeleton’s grid system.</p>
+          <p>The display of the most popular posts on the index page, gave me the opportunity to design cards to present key information about the posts.</p>
         </div>
       </div>
     </div>

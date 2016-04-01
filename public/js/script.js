@@ -160,3 +160,15 @@
       }]
 
     });
+
+  $("#sparkline").sparkline([16,29,38], {
+    type: 'bar',
+    barWidth: 7,
+    barSpacing: 2,
+    barColor: '#043574'});
+
+$("#sparkline2").sparkline([17,21,43], {
+    type: 'bar',
+    barWidth: 7,
+    barSpacing: 2,
+    barColor: '#ca0516'});
