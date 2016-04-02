@@ -6,23 +6,19 @@ module Portfolio
     end
 
     get "/project/1" do
-      erb :simon   
+      erb :fringely   
     end 
 
     get "/project/2" do
-      erb :fringely   
+      erb :partylines   
     end
 
     get "/project/3" do
-      erb :midways    
+      erb :simon    
     end
 
     get "/project/4" do
-      erb :partylines    
-    end
-
-    get "/contact" do
-    	erb :contact
+      erb :midways    
     end
 
     get "/about"do
