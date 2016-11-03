@@ -21,6 +21,10 @@ module Portfolio
       erb :midways    
     end
 
+    get "/project/5" do
+      erb :tq    
+    end
+
     get "/about"do
         erb :about
     end

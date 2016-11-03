@@ -54,9 +54,22 @@ img.img-responsive.main{
 
 img{
 	border: .5px solid #d3d3d3;
-	text-align: center;
+/*	text-align: center;*/
 	margin-top: 5px;
 	margin-bottom: 5px;
+}
+
+img.img-responsive.max-img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+img.img-responsive.center-img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .img-grid{
