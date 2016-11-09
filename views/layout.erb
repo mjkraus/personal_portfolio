@@ -1,45 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="/js/jquery-1.11.3.min.js"></script>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> 
-  <link rel="stylesheet" href="/css/style.css" />
-  <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,700,800' rel='stylesheet' type='text/css'>
-<!--   <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'> -->
-<!--   <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--   <meta name="viewport" content="width=device-width,height=device-height initial-scale=1">
  -->  <title>Molly Kraus</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400|Oswald:300|Roboto+Condensed:700" rel="stylesheet">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css" />
+
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="row">
-      <div class="col-xs-6 col-md-6 logo">
-      <a href='/'><p>MOLLY KRAUS</p></a>
-      </div>
-      <div class="col-xs-6 col-md-6 main-nav">
-      <a href='/about'>About</a>
-      <a href='/'>Work</a>
-      </div>
-      </div>
-    </div>
-  </header>    
     <!-- The yeild here is the content in the body. It is calling it from our index.erb file -->
     <%= yield %>
-<footer>
-  <div class="footer-wrapper">
-    <span><a href="mailto:mollyjkraus@gmail.com?subject=Hello Molly">mollyjkraus@gmail.com</a></span> 
-  </div> 
-</footer>    
 </body>
+  <script src="/js/jquery-1.11.3.min.js"></script>
+  <script src="https://use.fontawesome.com/60a568b961.js"></script>
   <script src="http://code.highcharts.com/highcharts.js"></script>
   <script type="text/javascript" src="/js/jquery.sparkline.js"></script>
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="/js/script.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="/js/skillCharts.js" type="text/javascript" charset="utf-8"></script>
 </html>
