@@ -22,7 +22,7 @@ module Portfolio
     end
 
     get "/project/5" do
-      erb :tq    
+      erb :tqOriginal    
     end
 
     get "/about"do
