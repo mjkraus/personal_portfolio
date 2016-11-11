@@ -25,6 +25,10 @@ module Portfolio
       erb :tqOriginal    
     end
 
+    get "/project/6" do
+      erb :raiseWage   
+    end    
+
     get "/about"do
         erb :about
     end

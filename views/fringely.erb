@@ -1,85 +1,48 @@
 <div class="container">
-  <div class="row">
+  <div class="row logoRow">
     <div class="col-xs-12 col-md-12">
-      
-      <div class="project-title">
-        <h2>fringely</h2>
-      </div>
-
-      <div class="links-group">  
-        <div class="links-tab"><p><a href='http://fringely.herokuapp.com/'>Website</a></p></div>
-        <div class="links-tab"><p><a href='https://github.com/mjkraus/project-forum'>GitHub</a></p></div>
-        <p>Ruby, Sinatra, PostgreSQL, Skeleton, HTML and CSS</p>
-      </div> 
-
-      <hr>   
-
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <h3>Overview</h3>
-          <p>Fringely is a forum about women’s hair, specifically bangs, inspired by my time working as a hair stylist. In the hair industry, stylists refer to bangs as “fringe”, which is the root word of the forum’s name, Fringely.</p> 
-
-          <p>This web application was written in Ruby and runs on the Sinatra framework. I wrote SQL commands to make queries to the Postgres database, which stores users' login information, passwords, posts, topics, likes, and comments.</p>
-          <a class="btn btn-primary btn-sm" href="http://fringely.herokuapp.com/" role="button" style="background-color: white; border: 3px solid black; background-image: none; color: black; margin-right: 5px;">View Site</a>
-          <a class="btn btn-primary btn-sm" href="https://github.com/mjkraus/project-forum" role="button" style="background-color: white; border: 3px solid black; background-image: none; color: black;">View Code</a>           
-        </div>
-
-        <div class="col-xs-12 col-md-6">
-          <span><img class="img-responsive center-block" src="/img/fringely-index.png"></span>       
-        </div>  
-      </div>
-
-      <hr>
-
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <span><img class="img-responsive center-block" src="/img/fringely-DB.png"></span>         
-        </div>
-
-        <div class="col-xs-12 col-md-6">
-          <h3>Planning the Database</h3>
-          <p>Before I began the development of Fringely, I created an entity-relationship diagram (ERD). This model helped me understand the relationships within the application and the structure of my relational database.</p>
-        </div>
-      </div>
-
-      <hr>   
-
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <h3>Creating Functionality</h3>
-          <ul>
-            <li>Custom coded forms for login, sign up, post creation, and comments</li>
-            <li>A user can create an account and log in. The password is encrypted through Bcrypt. Her posts and comments are associated with her account.</li>
-            <li>A user cannot comment or post without logging in</li>
-            <li>Any visitor to Fringely can “like” a post</li>
-            <li>Through the gem Redcarpet, a user can write her posts in Markdown and have them displayed in HTML.</li>
-            <li>Fringely’s top posts are sorted in descending order based on “likes”.</li>
-            <li>Posts are also filtered by topic.</li>
-          </ul>  
-        </div>
-
-        <div class="col-xs-12 col-md-6">
-          <span><img class="img-responsive center-block" src="/img/fringely-thread-ex.png"></span>         
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-<!--           <span><img class="img-responsive center-block" src="/img/wireframes.png"></span>  -->
-          <span><img class="img-responsive center-block" src="/img/fringely-set.png"></span>
-<!--           <span><img class="img-responsive center-block" src="/img/fringely-login.png"></span>
-          <span><img class="img-responsive center-block" src="/img/fringely-topics.png"></span>
-          <span><img class="img-responsive center-block" src="/img/fringely-post2.png"></span> -->
-        </div>
-
-        <div class="col-xs-12 col-md-6">
-          <h3>Designing the User Experience and Layout</h3>
-          <p>I designed Fringely with my younger clients from the salon in mind. I thought this forum should have a trendy, bold, and high fashion feel to it, but still be youthful and fun. I chose a heavy font and a black, white and gray color scheme to achieve this look. The layout is on Skeleton’s grid system.</p>
-          <p>I custom designed cards for the most popular posts displayed on the index page.</p>
-        </div>
-      </div>
+      <span><a href="/"><img class="img-responsive center-img smallLogo" src="../img/m.svg"></a></span>
     </div>
   </div>
-</div> 
+</div>
+
+<div class="container">
+  <div class="row projectHeader">
+    <div class="col-xs-12 col-md-12">
+      <a href="/project/4"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+      <a href="/project/6"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      <p class="projectDescription">Forum for Fringe</p>     
+      <h2>fringely</h2>
+      
+      <div class="linkGroup">
+        <p>Ruby, Sinatra, PostgreSQL, Skeleton, HTML and CSS</p>
+      </div> 
+    </div>
+  </div>  
+
+  <div class="row firstRow lastRow">
+    <div class="col-xs-12 col-md-6">
+      <h3>Overview</h3>
+      <p class="subTitle">Fringely</p>
+      <div class="textLeft">
+        <p>Fringely is a forum about women’s hair, specifically bangs, inspired by my time working as a hair stylist. In the hair industry, stylists refer to bangs as “fringe”, which is the root word of the forum’s name, Fringely.</p> 
+
+        <p>This web application was written in Ruby and runs on the Sinatra framework. I wrote SQL commands to make queries to the Postgres database, which stores users' login information, passwords, posts, topics, likes, and comments.</p>
+        <a class="portfolioButton buttonLeft" href="http://fringely.herokuapp.com/" target="_blank">View Website</a>
+        <a class="portfolioButton" href="https://github.com/mjkraus/project-forum" target="_blank">View Code</a>
+      </div>       
+    </div>
+
+    <div class="col-xs-12 col-md-6">
+      <span><img class="img-responsive center-block topImage" src="/img/fringely-ui.png"></span>          
+    </div>
+     
+  </div>
+
+  <div class="row footerRow">
+    <div class="col-xs-12 col-md-12">
+      <div class="footer-wrapper">
+      </div> 
+    </div>
+  </div>   
+</div>

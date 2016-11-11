@@ -1,82 +1,55 @@
-<!-- styling for paragraphs -->
-<!-- style="padding-right:60px;" "padding-left:60px;" -->
-<!-- <a href='/'><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a> -->
-<!-- style="padding-right:60px;
- -->
- <div class="container">
-  <div class="row">
+<div class="container">
+  <div class="row logoRow">
     <div class="col-xs-12 col-md-12">
-      
-      <div class="project-title">
-        <h2>party lines</h2>
-      </div>
-
-      <div class="links-group">  
-        <div class="links-tab"><p><a href='http://desolate-woodland-68989.herokuapp.com/'>Website</a></p></div>
-        <div class="links-tab"><p><a href='https://github.com/mjkraus/party-lines'>GitHub</a></p></div>
-        <p>Node.js, Highcharts.js, Sparklines.js, JavaScript, jQuery, Bootstrap, HTML and CSS</p>
-      </div> 
-
-      <hr>   
-    
-    <!-- quotes gathered by <a href="http://www.nytimes.com/interactive/2016/us/elections/candidates-on-the-issues.html?_r=0">The New York Times</a>. I designed the charts and graphs through data from Pew and used illustrations of 2016 presidential candidates from The Washington Post.</p> -->
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <h3>Overview</h3>
-          <p>Party Lines is an exercise in interactive storytelling and data visualization.</p>
-
-          <p>The project is based on the article <a href="https://www.washingtonpost.com/news/wonk/wp/2015/01/07/the-top-10-reasons-american-politics-are-worse-than-ever/" style="color: #ff2f18;">The Top 10 Reasons American Politics Are So Broken</a>, written by Jonathan Haidt and Sam Abrams. I also used a blurb from <a href="http://www.people-press.org/2014/06/12/political-polarization-in-the-american-public/#about-the-data" style="color: #ff2f18;">Pew Research Center</a>, along with Haidt and Abrams words, to enhance the introduction paragraph.</p>
-          <a class="btn btn-primary btn-sm" href="http://desolate-woodland-68989.herokuapp.com/" role="button" style="  background-color: white; border: 3px solid black; background-image: none; color: black; margin-right: 5px;">View Site</a>
-          <a class="btn btn-primary btn-sm" href="https://github.com/mjkraus/party-lines" role="button" style="background-color: white; border: 3px solid black; background-image: none; color: black;">View Code</a>           
-        </div>
-
-        <div class="col-xs-12 col-md-6">
-          <span><img class="img-responsive center-block" src="/img/party-lines-layout-ex.png"></span>       
-        </div>  
-      </div>
-
-      <hr>
-
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-<!--         col-md-pull-6 -->
-          <span><img class="img-responsive center-block" src="/img/party-lines-layout-drawing.png"></span>         
-        </div>
-
-        <div class="col-xs-12 col-md-6">
-        <!-- col-md-push-6 -->
-          <h3>Designing the Layout</h3>
-          <p>The landing page of Party Lines opens with a hero image. The hero image has a cinematic effect, which draws in the user’s attention. As the user scrolls down, the title fades to black, which further enhances this effect.</p> 
-
-          <!-- <p>My initial thought for the layout of the article was to create dividers for the headers of each point in Haidt and Abrams's list. These dividers would not only highlight the statements, but symbolically act as the lines between the two political parties. However, I quickly realized that these blocks disrupted the flow of the design and narrative. Therefore, I decided to increase the font size and underlined the points in order to set them apart from the rest of the content.</p> -->
-        </div>
-      </div>
-
-      <hr>   
-
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <h3>Creating the Data Visualization</h3>
-          <p>This project gave me the opportunity to explore data visualization. I redesigned several of the charts from the article and added interactivity through the JavaScript library Highcharts.js. I was incredibly excited to design two sparklines <span id="sparkline"></span><span id="sparkline2"></span> for the introduction paragraph using another JavaScript library, Sparklines.js. These small inline charts are an incredibly powerful tool when it comes to representing and enhancing the understanding of data in text.</p> 
-        </div>
-
-        <div class="col-xs-12 col-md-6">
-          <div id="liberal-pie-chart"></div>
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <span><img class="img-responsive center-block" src="/img/quote-game.png"></span>         
-        </div>
-
-        <div class="col-xs-12 col-md-6">
-          <h3>Developing the Party Lines Game</h3>
-          <p>To close the article, I developed a game in JavaScript that asks the user to agree or disagree with a series of quotes from 2016 Presidential candidates. These quotes are presented without the identity of the speaker. The final results display how many quotes from Republicans and Democrats that the user agreed or disagreed with, along with the identity of the quote’s author. The hope is that the user questions his/her own beliefs without the influence of a party's platform. This game was developed from a list of quotes gathered by <a href="http://www.nytimes.com/interactive/2016/us/elections/candidates-on-the-issues.html?_r=0" style="color: #ff2f18;">The New York Times</a>.</p>
-        </div>
-      </div>
+      <span><a href="/"><img class="img-responsive center-img smallLogo" src="../img/m.svg"></a></span>
     </div>
   </div>
-</div> 
+</div>
+
+<div class="container">
+  <div class="row projectHeader">
+    <div class="col-xs-12 col-md-12">
+      <a href="/project/6"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+      <a href="/project/3"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      <p class="projectDescription">Polarization in American Politics</p>     
+      <h2>Party Lines</h2>
+      
+      <div class="linkGroup">
+        <p>Node.js, Highcharts.js, Sparklines.js, JavaScript, jQuery, Bootstrap, HTML5 and CSS3</p>
+      </div> 
+    </div><!-- end of 12 col -->
+  </div>  <!-- end of row --> 
+
+<!--   <div class="row nexProject">
+    <div class="col-xs-12 col-md-12">
+    <a href="/project/2"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+    <a href="/project/5"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    </div>
+  </div> -->
+  
+  <div class="row firstRow lastRow">
+    <div class="col-xs-12 col-md-6">
+      <h3>Overview</h3>
+      <p class="subTitle">Party Lines</p>
+      <div class="textLeft">
+        <p>Party Lines is an exercise in interactive storytelling and data visualization.</p>
+
+        <p>The project is based on the article <a href="https://www.washingtonpost.com/news/wonk/wp/2015/01/07/the-top-10-reasons-american-politics-are-worse-than-ever/" style="color: #009FED;" target="_blank">The Top 10 Reasons American Politics Are So Broken</a>, written by Jonathan Haidt and Sam Abrams. I also used a blurb from <a href="http://www.people-press.org/2014/06/12/political-polarization-in-the-american-public/#about-the-data" style="color: #009FED;" target="_blank">Pew Research Center</a>, along with Haidt and Abrams words, to enhance the introduction paragraph.</p>
+        <a class="portfolioButton buttonLeft" href="http://desolate-woodland-68989.herokuapp.com/" target="_blank">View Website</a>
+        <a class="portfolioButton" href="https://github.com/mjkraus/party-lines" target="_blank">View Code</a>
+      </div>       
+    </div><!-- end of 12/6 col -->
+
+    <div class="col-xs-12 col-md-6">
+      <span><img class="img-responsive center-block topImage" src="/img/partylines-ui.png"></span>        
+    </div>
+     
+  </div>  <!-- end of row -->
+
+  <div class="row footerRow">
+    <div class="col-xs-12 col-md-12">
+      <div class="footer-wrapper">
+      </div> 
+    </div>
+  </div>   
+</div>  <!-- end of container -->

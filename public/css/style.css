@@ -302,28 +302,57 @@ img.img-responsive.max-img{
 }
 
 img.img-responsive.center-img{
-  display: block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.row.rowMargin{
-  margin-bottom: 80px;
+img.img-responsive.center-img.smallLogo{
+    height: 5em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}    
+
+.logoRow{
+  border-bottom: 3px solid #292929;
 }
 
-hr{
+.projectHeader{
+  margin-top: 3em;
+  padding-bottom: 3em;
+  border-bottom: 3px solid #292929;
+  text-align: center;
+}
+
+.firstRow{
+  border-top: 1px solid #292929;
+  margin-top: 2px;
+  padding-top: 3em;
+}
+
+.lastRow{
+  border-bottom: 1px solid #292929;
+  padding-bottom: 3em;
+}
+
+.footerRow{
+  border-top: 12px solid #292929;
+  margin-top: 2px;
+}
+
+/*hr{
   margin-top: 70px;
   margin-bottom: 80px;
   border: 0;
   border-top: 1px solid #c4c1bf;
-}
+}*/
 
-img.smallHeaderLogo{
-    height: 3em;
-    width: 3em;
+/*img.smallHeaderLogo{
+    height: 4em;
+    width: 4em;
     float: left;
-    margin: 2em 0 2em 2em;
-}
+    margin: 2em 0 70px 2em;
+}*/
 
 /*font for the m logo*/
 /*keep because I might use later*/
@@ -348,10 +377,6 @@ img.smallHeaderLogo:hover{
   font-size: 1em;
   line-height: 1.5em;
   margin-bottom: 0;
-/*  font-family: 'Roboto Condensed', sans-serif;
-  color: #CCCACA;
-  font-weight: 300;*/
-/*  text-transform: uppercase;*/
   font-family: 'Cormorant Garamond', serif;
   color: #666666;
   text-decoration: none;
@@ -370,14 +395,6 @@ img.smallHeaderLogo:hover{
   position: relative;
   text-align: center;
   margin-top: 1.5em;
-}
-
-.col-xs-12.col-md-12.projectHeader{
-  text-align: center;
-}
-
-.row.nexProject{
-  margin: 4em 0 4em 0;
 }
 
 i.fa.fa-angle-left, i.fa.fa-angle-right{
@@ -437,37 +454,41 @@ p.subTitle{
   margin-right: 1em;
 }
 
-footer{
-  margin-top: 2em;
+.footer-wrapper{
+  height: 5em;
 }
 
-footer p{
-  text-align: center;
+p.projectDescription{
   color: #c4c1bf;
-  font-size: 1em;
-  padding: 20px; 
-  font-family: 'Roboto Condensed', sans-serif;
-  text-transform: uppercase;
-  color: #c4c1bf;
-  font-weight: 300; 
+  font-style: italic;
+  margin-bottom: 0;
 }
 
-/*#footer{
-  bottom: 0;
-  width: 100%;
-  position: absolute;
-  height: 60px;
-}*/
+@media (max-width: 970px){
+  .topImage{
+    margin-top: 3em;
+  }
 
-/*#footer .footer-block{
-  text-align: center;
-  color: #c4c1bf;
-  bottom: 0;
-  width: 100%;
-  position: absolute;
-  height: 100px;
-  margin: 20px 0;
-}*/
+  .grid-panel{
+    height: 30vh;
+  }
+
+  .textRightWrapper{
+    margin-top: 3em;
+  }
+}
+
+@media (max-width: 1200px){
+  .widerTextLeft{
+    width: 80%;
+  }
+}
+
+@media (max-width: 450px){
+  .textLeft{
+    width: 100%;
+  }
+}
 
 
   
