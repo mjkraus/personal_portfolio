@@ -464,7 +464,7 @@ p.projectDescription{
   margin-bottom: 0;
 }
 
-@media (max-width: 970px){
+@media handheld, screen and (max-width: 970px){
   .topImage{
     margin-top: 3em;
   }
@@ -478,13 +478,13 @@ p.projectDescription{
   }
 }
 
-@media (max-width: 1200px){
+@media handheld, screen and (max-width: 1200px){
   .widerTextLeft{
     width: 80%;
   }
 }
 
-@media (max-width: 450px){
+@media handheld, screen and  (max-width: 450px){
   .textLeft{
     width: 100%;
   }
