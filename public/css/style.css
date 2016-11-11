@@ -485,8 +485,29 @@ p.projectDescription{
 }
 
 @media handheld, screen and  (max-width: 450px){
+  p{
+    font-size: 1.2em;
+  }
   .textLeft{
     width: 100%;
+  }
+  #logo{
+    height: 18em;
+  }
+  h2.verticalHeadline{
+    margin-top: 3em;
+  }
+
+  .textRightWrapper{
+    margin-top: 1em;
+  }
+
+  .grid-panel{
+    height: 40vh;
+  }
+
+  #img6, #img6:hover{
+    background-position: center left;
   }
 }
 
