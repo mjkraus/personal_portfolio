@@ -2,17 +2,30 @@ body{
   background-color: #F5F2EF;
   color: #292929;
 }
-
-h2, h3{
+h1, h2, h3{
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 2em;
   margin: 0;
   text-transform: uppercase;
   font-weight: 700;
 }
+h1{
+  font-size: 2.5em;
+  margin-bottom: .5em;
+}
+
+h3{
+  font-size: 2em;
+}
 
 h3{
   font-size: 1.5em;
+}
+
+.subHeading{
+  font-size: 1.5em;
+  text-transform: none;
+  font-weight: 500;
+  color: #666666;
 }
 
 p{
@@ -22,36 +35,26 @@ p{
   line-height: 1.5em;
 }
 
-/*font-family: 'Cormorant Garamond', serif;
-font-family: 'Roboto Condensed', sans-serif;
-font-family: 'Oswald', sans-serif;*/
+.mainCopyWrapper{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-/*@media
-only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (min--moz-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5){
-
-  html,
-  body{
-    width:100%;
-    overflow-x:hidden;
-  }
-
-}*/
-
-p.scrollDown{
+/*p.scrollDown{
     margin: auto;
     text-align: center;
     top: 90vh;
     position: relative;
     font-size: 1.2em;
-}
+}*/
 
 .mainWrapper{
     display: block;
     position: relative;
-    height: 100vh;
+    height: 70vh;
+    text-align: center;
 }
 
 .yellowBackgroundSquare{
@@ -63,17 +66,16 @@ p.scrollDown{
     position: absolute;
 }
 
-#logo{
+/*#logo{
     text-align: center;
     width: inherit;
     height: 30em;
     margin: auto;
     position: absolute;
-/*    position: relative;*/
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+}*/
 .grid-row{
 	width: 100%;
     overflow: auto;
@@ -87,16 +89,6 @@ p.scrollDown{
 	background-size: cover;
 	background-color:#eee;
 }
-
-/*gradient blue 24206a
-gradient red fe5e67
-
-fringely blue 84d0f8
-red e21622
-
-yellow fff001 lighter fcf141 
-blue 0d04b9*/ 
-
 
 #img1{
    background-image: url('../img/fringely-blue-square.jpg');
@@ -197,16 +189,6 @@ h2.verticalHeadline{
     margin: 2em;
 }
 
-/*p.verticalHeadline{
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1em;
-    transform: rotate(-90deg);
-    transform-origin: top 0;
-    float: none;
-    display: inline-block;
-    white-space: nowrap;
-    margin: 0;
-}*/
 .chartSize{
     display: inline-block;
 }
@@ -237,62 +219,6 @@ i.fa.fa-linkedin:hover, i.fa.fa-github:hover, i.fa.fa-twitter:hover, i.fa.fa-ins
   color: #009FED;
   text-decoration: underline;
 }
-
-/*CSS FOR FUTURE PROJECT PAGES*/
-/*.outer {
-    background-color: pink;
-    width: 100%;
-    height: 400px;
-    position: relative;
-    display: inline-block;
-}
-
-.inner {
-    font-size: 13px;
-    font-color: #878787;
-    position: absolute;
-    text-align: justify;
-    top: 55%;
-    left: 50%;
-    background: #DDD;
-    display: inline-block;
-    white-space: nowrap;
-}
-
-.inner.rotate.title{
-    top: 20%;
-    left: 35%;
-}
-
-.inner.rotate.buttonRow{
-    top: 31%;
-    left: 65%;
-}
-
-a.websiteButton{
-    border: 2px solid black;
-    padding: .5em;
-    margin: 1em;
-}
-
-a.codeButton{
-    border: 2px solid black;
-    padding: .5em;
-    margin: 1em;
-    margin-right: 0;
-}
-
-.rotate {
-    -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
-  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
-  transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
-}
-
-.textLeft{
-    width: 50%;
-    border: 1px solid green;
-} */
-/*END OF CSS FOR FUTURE PROJECT PAGES*/
 
 img.img-responsive.max-img{
   display: block;
@@ -338,35 +264,7 @@ img.img-responsive.center-img.smallLogo{
 .footerRow{
   border-top: 12px solid #292929;
   margin-top: 2px;
-}
-
-/*hr{
-  margin-top: 70px;
-  margin-bottom: 80px;
-  border: 0;
-  border-top: 1px solid #c4c1bf;
-}*/
-
-/*img.smallHeaderLogo{
-    height: 4em;
-    width: 4em;
-    float: left;
-    margin: 2em 0 70px 2em;
-}*/
-
-/*font for the m logo*/
-/*keep because I might use later*/
-/*p.smallLogo{
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1.5em;
-    margin: 2em 0 2em 1em;
-    line-height: 2em;
-    color: #D4D4D4;
-}
-
-p.smallLogo:hover{
-  color: #FFF001;
-} */   
+} 
 
 img.smallHeaderLogo:hover{
   cursor: pointer;
@@ -509,6 +407,36 @@ p.projectDescription{
   #img6, #img6:hover{
     background-position: center left;
   }
+}
+
+.navbar{
+  margin-bottom: 0px;
+  border-bottom: 2px solid #CFCFCF;
+  background-color: #F5F2EF;
+
+}
+
+.navbar-default{
+  background-image: none;
+  box-shadow: none;
+}
+
+.navbar-default .navbar-brand{
+    color: #292929;
+}
+
+.navbar-brand{
+    position: absolute;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 
