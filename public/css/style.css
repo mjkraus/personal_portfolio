@@ -79,9 +79,9 @@ p.scrollDown{
     overflow: auto;
 }
 .grid-panel{
-    height: 50vh;
-    width: 50%;
-    float: left;
+  height: 50vh;
+  width: 50%;
+  float: left;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
