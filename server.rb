@@ -27,7 +27,15 @@ module Portfolio
 
     get "/project/6" do
       erb :raiseWage   
-    end    
+    end
+
+    get "/project/7" do
+      erb :bolthouse
+    end
+
+    get "/project/8" do
+      erb :laughingcow
+    end     
 
     get "/about"do
         erb :about

@@ -2,30 +2,40 @@ body{
   background-color: #F5F2EF;
   color: #292929;
 }
-h1, h2, h3{
-  font-family: 'Roboto Condensed', sans-serif;
+.h1, .h2, .h3{
   margin: 0;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-h1{
-  font-size: 2.5em;
-  margin-bottom: .5em;
 }
 
-h3{
+h1 {
+  font-size: 2.5em;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-bottom: 0.75em;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2 {
   font-size: 2em;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
 }
 
 h3{
   font-size: 1.5em;
+  font-weight: 500;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  color: #292929;
 }
 
 .subHeading{
   font-size: 1.5em;
   text-transform: none;
   font-weight: 500;
-  color: #666666;
 }
 
 p{
@@ -37,28 +47,39 @@ p{
 
 .mainCopyWrapper{
   position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+/*  background: #FFF001;
+  padding: 1em;*/
 }
 
-/*p.scrollDown{
+p.scrollDown{
     margin: auto;
     text-align: center;
     top: 90vh;
     position: relative;
     font-size: 1.2em;
-}*/
+}
+
+.copy{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+/*    font-size: 1.2em;*/
+}
 
 .mainWrapper{
     display: block;
     position: relative;
-    height: 70vh;
+    height: 100vh;
     text-align: center;
 }
 
-.yellowBackgroundSquare{
-    background-color: #FFF001;
+.blueBackgroundSquare{
+/*    background-color: #FFF001;*/
+    background-color: #85d8fa;
     height: inherit;
     width: 50%;
     z-index: -999;
@@ -66,7 +87,16 @@ p{
     position: absolute;
 }
 
-/*#logo{
+div.row.intro{
+ /* background-color: rgba(255, 240, 1, 0.8);
+*/  padding: 10%;
+}
+
+section.process{
+  margin-top: 9em;
+}
+
+#logo{
     text-align: center;
     width: inherit;
     height: 30em;
@@ -75,7 +105,8 @@ p{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}*/
+/*    opacity: 0.5;*/
+}
 .grid-row{
 	width: 100%;
     overflow: auto;
@@ -87,61 +118,109 @@ p{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-color:#eee;
 }
 
 #img1{
    background-image: url('../img/fringely-blue-square.jpg');
 }
 
-#img1:hover{
+/*#img1:hover{
    background-image: url('../img/fringely-square.jpg');
-}
+}*/
 
 #img2{
    background-image: url('../img/raise-above-wage-red-square.jpg');
    background-position: center 40%;
 }
 
-#img2:hover{
+/*#img2:hover{
    background-image: url('../img/raise-above-wage-cropped2.jpg');
-}
+}*/
 
 #img3{
    background-image: url('../img/partylines-yellow.jpg');
 }
 
-#img3:hover{
+/*#img3:hover{
    background-image: url('../img/partylines-square.jpg');
-}
+}*/
 
 #img4{
    background-image: url('../img/simon-blue.jpg');
     background-position: center 48%;
 }
 
-#img4:hover{
+/*#img4:hover{
    background-image: url('../img/simon2.jpg');
     background-position: center 48%;
-}
+}*/
 
 #img5{
    background-image: url('../img/tiq-red-2.jpg');
        background-position: center 30%;
 }
 
-#img5:hover{
+/*#img5:hover{
    background-image: url('../img/tiq.jpg');
     background-position: center 30%;
-}
+}*/
 
 #img6{
    background-image: url('../img/midways-yellow.jpg');
     background-position: center top;
 }
-#img6:hover{
+
+#img7{
+   background-image: url('../img/bolthouse-yellow-2.jpg');
+    background-position: center top;
+}
+
+#img8{
+   background-image: url('../img/lc-red.jpg');
+    background-position: center 20%;
+}
+
+/*#img6:hover{
    background-image: url('../img/midways-square-2.jpg');
     background-position: center top;
+}*/
+
+.iconImage{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-size: co\; object-fit: contain;
+    width: 15em;
+    height: 15em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#research{
+   background-image: url('../img/research.svg');
+   margin-right: 15em;
+}
+
+#design{
+   background-image: url('../img/design.svg');
+   margin-left: 15em;
+}
+
+#build{
+   background-image: url('../img/build.svg');
+   margin-right: 15em;
+}
+
+#test{
+   background-image: url('../img/test.svg');
+   margin-left: 15em;
+}
+
+.processWrapper{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10em;
 }
 
 .aboutWrapper{
@@ -168,11 +247,18 @@ p{
 .textRightWrapper{
     display: inline-block;
     width: 18em;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.textLeftWrapper{
+    display: inline-block;
+    width: 18em;
     text-align: right;
     vertical-align: middle;
 }
 
-.textRightWrapper p{
+.textRightWrapper p, .textLeftWrapper p{
   font-family: 'Cormorant Garamond', serif;
   font-style: 1em;
   line-height: 1.5em;
@@ -245,26 +331,20 @@ img.img-responsive.center-img.smallLogo{
 
 .projectHeader{
   margin-top: 3em;
-  padding-bottom: 3em;
-  border-bottom: 3px solid #292929;
+  padding-bottom: 5em;
   text-align: center;
 }
 
 .firstRow{
-  border-top: 1px solid #292929;
+/*  border-top: 1px solid #292929;*/
   margin-top: 2px;
   padding-top: 3em;
 }
 
 .lastRow{
-  border-bottom: 1px solid #292929;
+/*  border-bottom: 1px solid #292929;*/
   padding-bottom: 3em;
 }
-
-.footerRow{
-  border-top: 12px solid #292929;
-  margin-top: 2px;
-} 
 
 img.smallHeaderLogo:hover{
   cursor: pointer;
@@ -376,10 +456,33 @@ p.projectDescription{
   }
 }
 
+@media handheld, screen and  (max-width: 992px){
+    .process.Desktop{
+    display: none;
+  }
+
+  .container.processMobile{
+    display: block;
+  }
+
+}
+
+@media handheld, screen and  (min-width: 992px){
+    .process.Desktop{
+    display: block;
+  }
+
+  .container.processMobile{
+    display: none;
+  }
+
+}
+
 @media handheld, screen and (max-width: 1200px){
   .widerTextLeft{
     width: 80%;
   }
+
 }
 
 @media handheld, screen and  (max-width: 450px){
@@ -409,6 +512,7 @@ p.projectDescription{
   }
 }
 
+
 .navbar{
   margin-bottom: 0px;
   border-bottom: 2px solid #CFCFCF;
@@ -437,6 +541,38 @@ p.projectDescription{
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
+    margin-left: 0px;
+}
+
+.col-sm-12.col-md-6.stackedPadding{
+  padding-bottom: 5em;
+}
+
+.col-sm-12.col-md-4.stackedPadding{
+  padding-bottom: 5em;
+}
+
+.navbar>.container-fluid .navbar-brand {
+     margin-left: 0px; 
+}
+
+.mobileIcon{
+  height: 10em;
+  margin-bottom: 3em;
+}
+
+.container.processMobile{
+  margin-top: 9em;
+  margin-bottom: 10em;
+}
+
+.col-sm-6.iconText{
+  padding-right: 4em;
+  padding-left: 4em;
+}
+
+.col-xs-12.col-sm-6.iconText.iconRowPadding{
+  padding-bottom: 5em;
 }
 
 
