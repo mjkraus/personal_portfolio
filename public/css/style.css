@@ -64,7 +64,7 @@ p.scrollDown{
 
 .copy{
     position: absolute;
-    top: 50%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
 /*    font-size: 1.2em;*/
@@ -574,7 +574,6 @@ p.projectDescription{
 .col-xs-12.col-sm-6.iconText.iconRowPadding{
   padding-bottom: 5em;
 }
-
 
   
 
